@@ -176,36 +176,54 @@
   clear: both;
 }
 
-.is-hidden {
+.hidden,
+[hidden] {
   display: none !important;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 599px) {
-  .hide-xs {
+  .hidden-xs {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
-  .hide-sm {
+  .hidden-sm {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-  .hide-md {
+  .hidden-md {
     display: none !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hide-lg {
+  .hidden-lg {
     display: none !important;
   }
 }
 
 @media print {
-  .hide-pr {
+  .hidden-pr {
     display: none !important;
   }
 }
